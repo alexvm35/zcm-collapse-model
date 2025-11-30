@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zcm-collapse-model"
+version = "1.0.0"
+description = "Math-only implementation of the Zeta Collapse Model (ZCM). System architecture and database are patent-pending and not included."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+
+authors = [
+  { name = "Alex Veldman" }
+]
+
+keywords = [
+  "zeta",
+  "zeta-function",
+  "collapse-model",
+  "deterministic",
+  "entropy-reduction",
+  "harmonic-analysis",
+  "signal-processing",
+  "math-library",
+  "python-library"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: Apache Software License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Mathematics"
+]
+
+[project.urls]
+Homepage = "https://github.com/alexvm35/zcm-collapse-model"
+Source = "https://github.com/alexvm35/zcm-collapse-model"
+"Issue Tracker" = "https://github.com/alexvm35/zcm-collapse-model/issues"
+
+[tool.setuptools]
+packages = ["zcm"]
