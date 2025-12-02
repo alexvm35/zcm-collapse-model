@@ -67,4 +67,27 @@ For collaboration, licensing, or access to ZCM’s system architecture:
 GitHub: https://github.com/alexvm35  
 ResearchGate: https://www.researchgate.net/
 
+## 📚 Related Work
+
+The Zeta Collapse Model (ZCM) sits in a broader landscape of research exploring
+spectral, harmonic, or zeta-function–based mechanisms for dimensional reduction
+and state collapse.
+
+A closely related theoretical work is:
+
+**Stander, M. & Wallis, B. (2023).  
+"Deriving Measurement Collapse Using Zeta Function Regularisation."**  
+arXiv: 2303.0054  
+https://arxiv.org/abs/2303.0054
+
+Their approach derives quantum measurement collapse using zeta-function
+regularisation and thermodynamic arguments. While ZCM is *not* a quantum collapse
+theory, both frameworks share the idea of using zeta-spectral structure to
+reduce high-entropy systems into stable surviving states.
+
+ZCM generalises this idea into a **deterministic, computation-oriented collapse
+filter** that applies to numerical data, candidate sets, token streams, and
+signal processing pipelines.
+
+
 
