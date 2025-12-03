@@ -1,51 +1,65 @@
-# Zeta Collapse Model (ZCM) – Math Library
+Zeta Collapse Model (ZCM) – Math-Only Library
 
-This repository contains the **math-only implementation** of the Zeta Collapse Model (ZCM):  
-a deterministic framework for collapsing high-entropy data using radar-band logic inspired by
-the spectral behaviour of the Riemann zeta function.
+This repository contains the math-only implementation of the Zeta Collapse Model (ZCM):
+a deterministic framework for collapsing high-entropy data using radar-band filtering and spectral cues inspired by the behaviour of the Riemann zeta function.
 
-⚠️ **Important:**  
-This repository includes *only the mathematical components* of ZCM.  
-The **ZCM database architecture, selector engine, radar-band orchestration, and system-level design**
-are *patent-pending* and are **not** included here.
+ZCM provides a minimal, deterministic mechanism for isolating stable subsets within noisy or chaotic candidate sets.
+It requires:
 
----
+no machine learning
 
-## ✨ What is ZCM?
+no probability
 
-The Zeta Collapse Model is a deterministic collapse method that:
+no statistical modelling
 
-- Defines **radar bands** to isolate stable signal regions.
-- Applies harmonic / interval logic to reduce chaotic candidate sets.
-- Uses simple zeta-derived metrics (e.g., `basic_zeta_metric`) for illustration.
-- Requires **no machine learning**, **no statistics**, and **no probability**.
+⚠️ Important Notice
 
-This math library is intentionally minimal and demonstrates the foundational ideas behind
-ZCM collapse behaviour.
+This repository exposes only the mathematical helpers used by ZCM.
 
----
+The following patent-pending components are not included:
 
-## 📦 Included in this repo
+ZCM Database Architecture
 
-### Math modules
+Multi-Stage Collapse Selector Engine
 
-- `zcm/radar_bands.py`  
-  Radar band definitions and filtering logic.
+Radar-Band Orchestration Pipeline
 
-- `zcm/collapse.py`  
-  A simple deterministic collapse using a single radar band.
+System-Level Collapse Design
 
-- `zcm/zeta_metrics.py`  
-  Toy zeta-related metrics (for examples only).
+This repo is safe for public research use and does not disclose any protected IP.
 
-- `zcm/__init__.py`  
-  Public API surface.
+✨ What Is ZCM?
 
----
+The Zeta Collapse Model is a deterministic collapse mechanism that:
 
-## 🧠 Example usage
+Defines radar bands to isolate stable numerical or spectral regions
 
-```python
+Applies interval / harmonic logic to eliminate chaotic or low-signal candidates
+
+Uses simple zeta-derived metrics for illustration
+
+Produces a collapsed “survivor” set without randomness or probability
+
+This Python package provides the minimal math surface used in examples and demonstrations.
+
+📦 Included in This Repository
+zcm/radar_bands.py
+
+Numerical radar-band definitions and filtering utilities.
+
+zcm/collapse.py
+
+Simple deterministic collapse using a single radar band.
+
+zcm/zeta_metrics.py
+
+Toy zeta-related metrics for demonstration purposes only.
+
+zcm/__init__.py
+
+Public API entry point.
+
+🧠 Example Usage
 from zcm import collapse_by_radar_band
 
 candidates = [3, 6, 8, 15, 18, 39]
@@ -57,37 +71,37 @@ survivors = collapse_by_radar_band(
 )
 
 print(survivors)
-# → [8, 15, 18]
+# → [15, 18]
 
-## 📩 Contact
+📚 Related Work
 
-For collaboration, licensing, or access to ZCM’s system architecture:
+ZCM fits into emerging research exploring the use of spectral, harmonic, or zeta-function structures to reduce high-entropy systems into stable, low-dimensional subsets.
 
-**Alex Veldman**   
-GitHub: https://github.com/alexvm35  
-ResearchGate: https://www.researchgate.net/
+A notable example is:
 
-## 📚 Related Work
-
-The Zeta Collapse Model (ZCM) sits in a broader landscape of research exploring
-spectral, harmonic, or zeta-function–based mechanisms for dimensional reduction
-and state collapse.
-
-A closely related theoretical work is:
-
-**Stander, M. & Wallis, B. (2023).  
-"Deriving Measurement Collapse Using Zeta Function Regularisation."**  
-arXiv: 2303.0054  
+Stander, M. & Wallis, B. (2023)
+Deriving Measurement Collapse Using Zeta Function Regularisation
+arXiv:2303.0054
 https://arxiv.org/abs/2303.0054
 
-Their approach derives quantum measurement collapse using zeta-function
-regularisation and thermodynamic arguments. While ZCM is *not* a quantum collapse
-theory, both frameworks share the idea of using zeta-spectral structure to
-reduce high-entropy systems into stable surviving states.
+While ZCM is not a quantum measurement model, both approaches demonstrate how zeta-regularised spectral behaviour can be used to drive a collapse toward stable surviving states.
 
-ZCM generalises this idea into a **deterministic, computation-oriented collapse
-filter** that applies to numerical data, candidate sets, token streams, and
-signal processing pipelines.
+ZCM generalises this concept into a deterministic, computation-oriented filtering mechanism suitable for:
 
+numerical candidate sets
 
+token streams
+
+entropy-reduction pipelines
+
+signal-processing workflows
+
+📩 Contact
+
+For collaboration, licensing, or access to the full ZCM system architecture:
+
+Alex Veldman
+GitHub: https://github.com/alexvm35
+
+ResearchGate: https://www.researchgate.net/
 
